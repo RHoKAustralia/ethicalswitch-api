@@ -16,7 +16,6 @@ test/version_tmp
 tmp
 .sass-cache
 bin
-Gemfile.lock
 .env
 vendor
 .idea
