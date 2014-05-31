@@ -1,6 +1,4 @@
 require 'sequel'
-require 'dotenv'
-Dotenv.load
 
 DB = Sequel.connect(ENV["DATABASE_URL"])
 DB << "SET CLIENT_ENCODING TO 'UTF8';"
