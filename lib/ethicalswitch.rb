@@ -20,7 +20,7 @@ module EthicalSwitch
       raise Error, "RACK_ENV is required"
     end
 
-    database = Sequel.connect(settings["DATABASE_URL"])
+    database = Sequel.connect(settings['DATABASE_URL'] || 'postgres://localhost/mydb')
     database << "SET CLIENT_ENCODING TO 'UTF8';"
     Sequel.default_timezone = :utc
     Sequel::Model.plugin :timestamps
