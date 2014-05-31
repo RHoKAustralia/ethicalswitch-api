@@ -18,6 +18,10 @@ Create a new database:
 
     createdb -h localhost -p 5100 ethicalswitch
 
+Create the database tables:
+    
+    ruby lib/ethicalswitch/database/create_tables.rb
+
 Open the app:
 
     open http://localhost:5000/
