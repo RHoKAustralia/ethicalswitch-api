@@ -1,0 +1,3 @@
+#!/bin/sh
+bundle install --binstubs
+pg_ctl init -D vendor/postgresql

@@ -1,24 +1,26 @@
 # Ethicalswitch
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'ethicalswitch'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ethicalswitch
+Sinatra API for signups to ethicalswitch.org
 
 ## Usage
 
-TODO: Write usage instructions here
+Copy `.env.sample` to `.env` and configure required variables.
+
+Get your environment up and running:
+
+    script/bootstrap
+
+Start the server:
+
+    script/server
+
+Create a new database:
+
+    createdb -h localhost -p 5100 ethicalswitch
+
+Open the app:
+
+    open http://localhost:7777/
 
 ## Contributing
 

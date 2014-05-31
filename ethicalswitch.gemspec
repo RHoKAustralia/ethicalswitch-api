@@ -5,7 +5,7 @@ require 'ethicalswitch/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ethicalswitch"
-  spec.version       = Ethicalswitch::VERSION
+  spec.version       = EthicalSwitch::VERSION
   spec.authors       = ["James Maidment"]
   spec.email         = ["jmaidment@gmail.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
@@ -18,6 +18,17 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  spec.add_dependency "bundler", "~>1.5"
+  spec.add_dependency "rake", "~>10.3.2"
+  spec.add_dependency "sinatra", "~>1.3"
+  spec.add_dependency "sequel", "~>4.10.0"
+  spec.add_dependency "pg", "~>0.17.1"
+  spec.add_dependency "json", "~>1.8.1"
+
+  # development
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "shotgun", "~>0.9"
+  spec.add_development_dependency "thin", "~>1.2"
+  spec.add_development_dependency "foreman", "~>0.67.0"
+  spec.add_development_dependency "sass", "~>3.3.7"
 end
