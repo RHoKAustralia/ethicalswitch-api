@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "bundler", "~>1.5"
   spec.add_dependency "rake", "~>10.3.2"
   spec.add_dependency "sinatra", "~>1.3"
+  spec.add_dependency "sinatra-cross_origin", "~> 0.3.1"
   spec.add_dependency "sequel", "~>4.10.0"
   spec.add_dependency "pg", "~>0.17.1"
   spec.add_dependency "json", "~>1.8.1"

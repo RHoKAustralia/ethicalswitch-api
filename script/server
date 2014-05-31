@@ -1,2 +1,2 @@
 #!/bin/sh
-bin/foreman start -e .env
+bin/foreman start -e .env -f Procfile.dev

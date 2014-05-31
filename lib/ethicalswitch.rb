@@ -1,6 +1,7 @@
 require "net/http"
 
 require "sinatra/base"
+require "sinatra/cross_origin"
 require "sequel"
 require "pg"
 require "json"

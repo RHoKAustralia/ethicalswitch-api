@@ -6,22 +6,25 @@ module EthicalSwitch
     set     :public_folder, __dir__ + '/public/app'
     enable  :static
 
-    # Comma separate list of remote hosts that are allowed.
-    # :any will allow any host
-    set :allow_origin, :any
+    before do
+  
+       headers 'Access-Control-Allow-Origin' => '*', 
+                'Access-Control-Allow-Methods' => ['OPTIONS', 'GET', 'POST']  
+    end
 
-    # HTTP methods allowed
-    set :allow_methods, [:get, :post]
-
-    # Allow cookies to be sent with the requests
-    set :allow_credentials, true
+    set :protection, false
 
     get "/" do
-      @app_name = "Ethical Switch"
-      erb :index
+      File.read(File.join(settings.public_folder, 'index.html'))
+    end
+
+    options "/users/" do
+      200
     end
 
     post "/users/" do
+      headers 'Access-Control-Allow-Origin' => '*', 
+              'Access-Control-Allow-Methods' => ['OPTIONS', 'GET', 'POST']  
       options = {
         name:           params[:name],
         first_name:     params[:first_name],
@@ -31,7 +34,7 @@ module EthicalSwitch
         birthday:       params[:birthday],
         gender:         params[:gender],
         birthday:       params[:email],
-        facebook_id:    params[:facebook_id],
+        facebook_id:    params[:id],
         facebook_token: params[:facebook_token]
       }
       User.create(options).to_json
@@ -39,6 +42,10 @@ module EthicalSwitch
 
     get "/users/count/?" do
       {:users => User.count}.to_json
+    end
+
+    post "/test/" do
+      params.to_json
     end
   end
 end
