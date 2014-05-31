@@ -1,6 +1,6 @@
 # Ethicalswitch
 
-Sinatra API for signups to ethicalswitch.org
+Sinatra API for signups to http://ethicalswitch.org/
 
 ## Usage
 
