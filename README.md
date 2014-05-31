@@ -28,11 +28,11 @@ Open the app:
 
 ## API Documentation
 
-Get user count
+Get user count (GET)
 
     curl -i "http://localhost:5000/users/count"
 
-Add user
+Add user (POST)
 
     curl -i -d '{"name":"Jane Doe","first_name":"Jane","last_name":"Doe","email":"jane.doe@email.com","birthday":"01011977","gender":"female","facebook_id":"fds923f8g","facebook_token":"usd98f873ry7832fds87"}' http://localhost:5000/users/
 
