@@ -12,6 +12,8 @@ require "ethicalswitch/app"
 module EthicalSwitch
   class Error < StandardError; end
 
+  autoload :User, "ethicalswitch/models/user"
+
   def self.setup(settings)
     env = settings["RACK_ENV"]
     if env.nil? || env.empty?

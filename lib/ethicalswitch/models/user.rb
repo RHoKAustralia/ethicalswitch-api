@@ -1,4 +1,4 @@
-module Godspeed
+module EthicalSwitch
   class User < Sequel::Model
   end
 end

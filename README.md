@@ -26,6 +26,31 @@ Open the app:
 
     open http://localhost:5000/
 
+## API Documentation
+
+Get user count
+
+    curl -i "http://localhost:5000/users/count"
+
+Add user
+
+    curl -i -d '{"name":"Jane Doe","first_name":"Jane","last_name":"Doe","email":"jane.doe@email.com","birthday":"01011977","gender":"female","facebook_id":"fds923f8g","facebook_token":"usd98f873ry7832fds87"}' http://localhost:5000/users/
+
+User schema
+
+```
+{
+  "name": "Jane Doe",
+  "first_name": "Jane",
+  "last_name": "Doe",
+  "email": "jane.doe@example.com",
+  "birthday": "01011977",
+  "facebook_id": "fds923f8g",
+  "facebook_token": "usd98f873ry7832fds87",
+  "gender": "female"
+}
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/rhok-melbourne/ethicalswitch-api/fork )
