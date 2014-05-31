@@ -20,7 +20,7 @@ Create a new database:
 
 Open the app:
 
-    open http://localhost:7777/
+    open http://localhost:5000/
 
 ## Contributing
 
