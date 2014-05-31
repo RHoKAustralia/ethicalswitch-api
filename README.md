@@ -34,7 +34,7 @@ Get user count `GET`
 
 Add user `POST`
 
-    curl -i -d '{"name":"Jane Doe","first_name":"Jane","last_name":"Doe","email":"jane.doe@email.com","birthday":"01011977","gender":"female","facebook_id":"fds923f8g","facebook_token":"usd98f873ry7832fds87"}'  -X POST http://localhost:5000/users/
+    curl -i -d '{"name":"Jane Doe","first_name":"Jane","last_name":"Doe","email":"jane.doe@email.com","birthday":"01011977","gender":"female","facebook_id":"fds923f8g","facebook_token":"usd98f873ry7832fds87"}' -X POST http://localhost:5000/users/
 
 User schema
 
