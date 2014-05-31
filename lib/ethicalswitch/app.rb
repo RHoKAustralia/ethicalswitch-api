@@ -6,6 +6,16 @@ module EthicalSwitch
     set     :public_folder, __dir__ + '/public/app'
     enable  :static
 
+    # Comma separate list of remote hosts that are allowed.
+    # :any will allow any host
+    set :allow_origin, :any
+
+    # HTTP methods allowed
+    set :allow_methods, [:get, :post]
+
+    # Allow cookies to be sent with the requests
+    set :allow_credentials, true
+
     get "/" do
       @app_name = "Ethical Switch"
       erb :index
