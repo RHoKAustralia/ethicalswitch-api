@@ -1,4 +1,4 @@
-# Ethicalswitch
+# Ethical Switch API
 
 Sinatra API for signups to http://ethicalswitch.org/
 
