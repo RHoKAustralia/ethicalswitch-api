@@ -21,3 +21,4 @@ Gemfile.lock
 .env
 vendor
 .idea
+.elasticbeanstalk/
