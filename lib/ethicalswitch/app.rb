@@ -17,6 +17,7 @@ module EthicalSwitch
         first_name:     params[:first_name],
         last_name:      params[:last_name],
         email:          params[:email],
+        location:       params[:location],
         birthday:       params[:birthday],
         gender:         params[:gender],
         birthday:       params[:email],

@@ -15,6 +15,7 @@ DB.create_table! :users do
   column :first_name, :text
   column :last_name, :text
   column :email, :text, :unique=>true
+  column :location, :text
   column :birthday, :text
   column :gender, :text
   column :facebook_id, :text
