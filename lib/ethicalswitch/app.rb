@@ -41,7 +41,7 @@ module EthicalSwitch
     end
 
     get "/users/count/?" do
-      {:users => User.count}.to_json
+      User.count.to_json
     end
 
     post "/test/" do
